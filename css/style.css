@@ -64,6 +64,7 @@ body {
   background-color: #FFFBF2;
 }
 
+
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
 }
@@ -9661,3 +9662,20 @@ h6,
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.whatsapp {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+}
+
+.red img {
+  display: block;
+  text-decoration: none;
+  background: #cc2b2b;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+
+}
+
