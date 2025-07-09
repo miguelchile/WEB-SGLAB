@@ -9572,7 +9572,8 @@ h6,
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(51, 33, 29, 0.7);
+  background-color: #007bff;
+  /* background: rgba(51, 33, 29, 0.7); */
   z-index: 1;
 }
 
