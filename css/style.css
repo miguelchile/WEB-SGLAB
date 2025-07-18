@@ -226,7 +226,7 @@ button {
 .header_top{
      width: 100%;
      float: left;
-     background-color: #1c1c1c;
+     background-color: #99cee2ea;
      height: auto;
 }
 
@@ -246,25 +246,38 @@ button {
      width: 50%;
      float: left;
 }
+.contact_left img {
+     width: 15%;
+}
+
+
 .contact_right{
      width: 50%;
      float: left;
+}
+
+.contact_right img {
+     width: 15%;
 }
 
 .call_text{
      width: 100%;
      float: left;
      font-size: 18px;
-     color: #b7990f;
+     color: #ffffff;
 }
 .call_text a{
-    color: #b7990f;
+    color: #ffffff;
 }
 .call_text a:hover{
-    color: #b7990f;
+    color: #006eff;
 }
 .call_text_left{
      padding-left: 20px;
+}
+
+.call_text img {
+     width: 15%;
 }
 
 .navbar-expand-lg .navbar-nav {
@@ -283,52 +296,75 @@ button {
 }
 
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-    color: #f5cb0a;
+    color: #006eff;
 }
 .banner_section {
+    /* background-color: #99cee2ea; */
+    position: relative;
     width: 100%;
     float: left;
-    background-image: url(../images/banner-bg.png);
-    /* background-image: url(../images/img/fondo.webp); */
-    height:1200px;
+    background-image: url(../images/img/fondo.webp);
+    height:600px;
     padding-top: 50px;
     padding-bottom: 162px;
-    background-size: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
 }
 
 /* EFECTO FOTO */
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 56, 96, 0.5); /* azul oscuro semitransparente */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+.banner_section::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(53, 160, 163, 0.466); /* azul oscuro semitransparente */
+     z-index: 1;
 }
+
+.banner_section .container {
+     position: relative;
+     z-index: 3;
+     color: #fff;
+}
+.banner_section .container,
+.banner_section .row,
+.banner_section .col-md-6 {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+}
+
 
 /* FIN EFECTO FOTO */
 
-
-
-
-
-
-
-
-
-
-
-
-.image_1{
-     width: 100%;
-     float: left;
+.carousel-item .container {
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    height: 100%; /* Necesario para ocupar todo el alto */
 }
+
+.carousel-item .row {
+    width: 100%;
+    justify-content: center; /* Centra la columna horizontalmente */
+}
+
+.carousel-item .col-md-6 {
+    text-align: center; /* Centra el texto */
+}
+
+
+/* .image_1{
+     width: 600px;
+     float: left;
+     width: 100%;
+     margin-top: 20%;
+} */
+
 .achive_text {
     width: 100%;
     float: left;
@@ -336,6 +372,8 @@ button {
     color: #ffffff;
     font-weight: bold;
     padding-top: 100px;
+    position: relative;
+    z-index: 2;
 }
 p.best_text {
     width: 100%;
@@ -357,37 +395,75 @@ p.lorem_text {
 .appointment_bt {
     width: 100%;
     float: left;
-    margin-top: 40px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+
 }
 .appointment_bt a{
     width: 40%;
     float: left;
     font-size: 16px;
     color: #1c1c1c;
-    background-color: #c2a20e;
+    background-color: #f0f1f1;
     text-align: center;
     text-transform: uppercase;
     padding: 14px 0px;
 }
 .appointment_bt a:hover{
     color: #1c1c1c;
-    background-color: #ffffff;
+    background-color: #50a3da85;
 }
 
 .slide-wrapper{display:inline;}
 .slide-wrapper {padding:0;}
 
 
+/* PRUEBA IMAGEN */
+
+.imagen-contenedor {
+  position: relative; /* Permite posicionar la capa transparente */
+  width: 300px; /* Ajusta el ancho según tu imagen */
+  height: 200px; /* Ajusta el alto según tu imagen */
+}
+
+.imagen-contenedor img {
+  width: 100%;
+  height: 100%;
+  display: block; /* Evita espacios extra debajo de la imagen */
+}
+
+.capa-transparente {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Color negro con 50% de opacidad */
+}
+
+
+/* PRUEBA IMAGEN */
+ .row {
+     position:relative;
+     z-index: 2;
+     color: #fff;
+ }
+
+
+
 /*------------------------------ vertical bootstrap slider----------------------------*/
 
 .banner_section .carousel-inner> .carousel-item.carousel-item-next ,
 .banner_section .carousel-inner > .carousel-item.active.carousel-item-right{ 
-    transform: translate3d(0, 100%, 0); -webkit-transform: translate3d(0, 100%, 0); -ms-transform: translate3d(0, 100%, 0); -moz-transform: translate3d(0, 100%, 0); -o-transform: translate3d(0, 100%, 0);  top: 0;
+    transform: translate3d(0, 100%, 0); -webkit-transform: translate3d(0, 100%, 0); -ms-transform: translate3d(0, 100%, 0); 
+    -moz-transform: translate3d(0, 100%, 0); -o-transform: translate3d(0, 100%, 0);  top: 0;
     
 }
 .banner_section .carousel-inner > .carousel-item.carousel-item-prev ,
 .banner_section .carousel-inner > .carousel-item.active.carousel-item-left{ 
-    transform: translate3d(0,-100%, 0); -webkit-transform: translate3d(0,-100%, 0);  -moz-transform: translate3d(0,-100%, 0);-ms-transform: translate3d(0,-100%, 0); -o-transform: translate3d(0,-100%, 0); top: 0;
+    transform: translate3d(0,-100%, 0); -webkit-transform: translate3d(0,-100%, 0);  -moz-transform: translate3d(0,-100%, 0);
+    -ms-transform: translate3d(0,-100%, 0); -o-transform: translate3d(0,-100%, 0); top: 0;
     
 }
 .banner_section .carousel-inner > .carousel-item.next.carousel-item-left ,
@@ -396,6 +472,8 @@ p.lorem_text {
     transform:translate3d(0,0,0); -webkit-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);; -moz-transform:translate3d(0,0,0); -o-transform:translate3d(0,0,0); top:0;
     
 }
+
+
 
 /*------------------------------- vertical carousel indicators ------------------------------*/
 .carousel-indicators{
