@@ -516,24 +516,28 @@ p.lorem_text {
 .about_section{
      width: 100%;
      float: left;
-     background-image: url(../images/about-bg.png);
+     /* background-image: url(../images/about-bg.png); */
+     background-image: url(../images/img/fondo-nosotros.webp);
      height: auto;
-     background-size: 100%;
-     padding-bottom: 90px;
+     background-size: 30%;
+     padding-bottom: 90px;     
 }
+
 
 .image_2{
      width: 100%;
      float: left;
+     border-radius: 100%;
 }
 
 .unique_text{
     width: 100%;
     float: left;
     font-size: 18px;
-    color: #f5cb0a;
+    color: #0c0c0c;
     margin-left: 0px;
     font-weight: bold;
+    text-align: center;
 }
 .years_text{
     width: 100%;
@@ -548,6 +552,14 @@ p.lorem_text {
     float: left;
     font-size: 16px;
     color: #2c2c2b;
+    margin-left: 0px;
+}
+
+.ipsum_text_1{
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #000000;
     margin-left: 0px;
 }
 
