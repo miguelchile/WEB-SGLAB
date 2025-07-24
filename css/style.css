@@ -368,11 +368,11 @@ button {
 .achive_text {
     width: 100%;
     float: left;
-    font-size: 54px;
+    font-size: 35px;
     color: #ffffff;
     font-weight: bold;
-    padding-top: 100px;
-    position: relative;
+    padding-top: 100px;    
+    position:relative;
     z-index: 2;
 }
 p.best_text {
@@ -411,8 +411,8 @@ p.lorem_text {
     padding: 14px 0px;
 }
 .appointment_bt a:hover{
-    color: #1c1c1c;
-    background-color: #50a3da85;
+    color: #ffffff;
+    background-color: #50a3dabb;
 }
 
 .slide-wrapper{display:inline;}
@@ -448,6 +448,7 @@ p.lorem_text {
      position:relative;
      z-index: 2;
      color: #fff;
+     text-align: center;
  }
 
 
@@ -470,7 +471,6 @@ p.lorem_text {
 .banner_section .carousel-inner > .carousel-item.carousel-item-prev.carousel-item-right ,
 .banner_section .carousel-inner > .carousel-item.active{
     transform:translate3d(0,0,0); -webkit-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);; -moz-transform:translate3d(0,0,0); -o-transform:translate3d(0,0,0); top:0;
-    
 }
 
 
@@ -572,15 +572,15 @@ p.lorem_text {
     width: 30%;
     float: left;
     font-size: 16px;
-    color: #1c1c1c;
-    background-color: #c2a20e;
+    color: #ffffff;
+    background-color: #50a3dabb;
     text-align: center;
     text-transform: uppercase;
     padding: 14px 0px;
 }
 .read_more_bt a:hover{
-    color: #ffffff;
-    background-color: #000;
+    color: #000000;
+    background-color: #f0f1f1;
 }
 
 .service_section{
