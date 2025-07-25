@@ -226,7 +226,7 @@ button {
 .header_top{
      width: 100%;
      float: left;
-     background-color: #99cee2ea;
+     background-color: #50a3dabb;
      height: auto;
 }
 
@@ -626,6 +626,11 @@ p.lorem_text {
      width: 100%;
      float: left;
      text-align: center;
+}
+
+.image_3 img{
+     width: 70%;
+     border-radius: 10%;
 }
 
 .service_section_2 {
