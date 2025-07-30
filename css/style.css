@@ -217,6 +217,7 @@ button {
 .layout_padding {
      padding-top: 90px;
      padding-bottom: 0px;
+     text-align: center;
 }
 
 .padding_0{
@@ -293,10 +294,13 @@ button {
 .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 20px;
     padding-left: 20px;
+    color: rgba(87, 87, 83, 0.801);
 }
 
+
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-    color: #006eff;
+    /* color: #006eff; */
+    color: #50a3dabb;
 }
 .banner_section {
     /* background-color: #99cee2ea; */
@@ -404,15 +408,17 @@ p.lorem_text {
     width: 40%;
     float: left;
     font-size: 16px;
-    color: #1c1c1c;
-    background-color: #f0f1f1;
+    color: #ffffff;
+    background-color:  #50a3dabb;
+    /* background-color: #f0f1f1 ; */
     text-align: center;
     text-transform: uppercase;
     padding: 14px 0px;
 }
 .appointment_bt a:hover{
-    color: #ffffff;
-    background-color: #50a3dabb;
+    color: #000000;
+    background-color: #f0f1f1;
+    
 }
 
 .slide-wrapper{display:inline;}
@@ -534,7 +540,7 @@ p.lorem_text {
     width: 100%;
     float: left;
     font-size: 18px;
-    color: #0c0c0c;
+    color:#000000;
     margin-left: 0px;
     font-weight: bold;
     text-align: center;
@@ -543,7 +549,7 @@ p.lorem_text {
     width: 100%;
     float: left;
     font-size: 46px;
-    color: #1c1c1c;
+    color: #000000;
     font-weight: bold;
 }
 
@@ -559,7 +565,7 @@ p.lorem_text {
     width: 100%;
     float: left;
     font-size: 16px;
-    color: #000000;
+    color:#000000;
     margin-left: 0px;
 }
 
@@ -584,14 +590,47 @@ p.lorem_text {
 }
 
 .service_section{
-     width: 100%;
-     float: left;
-     background-image: url(../images/service-bg.png);
-     height: auto;
-     background-size: cover;
-     background-repeat: no-repeat;
-     padding-bottom: 90px;
+    /* background-color: #99cee2ea; */
+    position: relative;
+    width: 100%;
+    float: left;
+    background-image: url(../images/img/fondo.webp);
+    height:800px;
+    padding-top: 50px;
+    padding-bottom: 162px;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
 }
+
+/* INICIO EFECTO FOTO */
+
+.service_section::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(53, 160, 163, 0.466); /* azul oscuro semitransparente */
+     z-index: 1;
+}
+
+.service_section .container {
+     position: relative;
+     z-index: 3;
+     color: #fff;
+}
+.service_section .container,
+.service_section .row,
+.service_section.col-md-6 {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+}
+
+
+/* FIN EFECTO FOTO */
 
 .services_text{
     width: 100%;
@@ -674,8 +713,8 @@ p.lorem_text {
     width: 100%;
     float: left;
     font-size: 16px;
-    color: #1c1c1c;
-    background-color: #c2a20e;
+    color: #ffffff;
+    background-color: #50a3dabb;
     text-align: center;
     text-transform: uppercase;
     padding: 11px 0px;
@@ -771,7 +810,8 @@ p.lorem_text {
 .client_taital{
      width: 100%;
      float: left;
-     color: #0b0b0b;
+     /* color: #50a3dabb; */
+         color: rgba(87, 87, 83, 0.801);
      text-align: center;
      font-weight: bold;
      font-size: 46px;
@@ -780,7 +820,7 @@ p.lorem_text {
 
 .client_taital::after {
 content: '';
-border: 10px solid #c2a20e;
+border: 10px solid #50a3dabb;
 border-radius: 12px;
 position: relative;
 width: 120px;
@@ -796,7 +836,7 @@ justify-content: center;
 .alex_bg{
      width: 100%;
      float: left;
-     background-color: #1c1c1c;
+     background-color: #50a3da8c;
      height: auto;
      padding: 40px 30px;
 }
@@ -807,7 +847,7 @@ justify-content: center;
      font-size: 16px;
      color: #fefeff;
      font-style: italic;
-     border-bottom: 1px solid #dab509;
+     border-bottom: 1px solid #fffffe;
 }
 
 .reader_text{
@@ -830,7 +870,7 @@ justify-content: center;
 .contact_taital{
      width: 100%;
      float: left;
-     color: #0b0b0b;
+    color: rgba(87, 87, 83, 0.801);
      text-align: center;
      font-weight: bold;
      font-size: 46px;
@@ -839,7 +879,7 @@ justify-content: center;
 
 .contact_taital::after {
     content: '';
-    border: 10px solid #c2a20e;
+    border: 10px solid #50a3dabb;
     border-radius: 12px;
     position: absolute;
     width: 120px;
@@ -859,7 +899,7 @@ justify-content: center;
     font-size: 16px;
     color: #989999;
     border: 0px;
-    border-bottom: 1px solid #dab509;
+    border-bottom: 1px solid #50a3dabb;
     background-color: transparent !important;
     padding: 50px 30px 0px 0px;
 }
@@ -869,7 +909,7 @@ justify-content: center;
     width: 100%;
     height: 110px;
     font-size: 18px;
-    border-bottom: 1px solid #dab509 !important;
+    border-bottom: 1px solid #50a3dabb !important;
     background-color: transparent !important;
     padding: 75px 30px 0px 0px;
     border: 0px;
@@ -884,7 +924,7 @@ justify-content: center;
 .send_bt a{
      width: 30%;
      float: left;
-     background-color: #eac208;
+     background-color: #50a3dabb;;
      color: #fefeff;
      text-align: center;
      padding: 10px 0px;
@@ -892,8 +932,9 @@ justify-content: center;
 }
 
 .send_bt a:hover{
-     background-color: #000;
-     color: #fefeff;
+     background-color: #fffdfd;
+     color: #313133;
+     border: 2px solid #50a3dabb;
 }
 
 .map_text {
@@ -956,7 +997,7 @@ justify-content: center;
 .footer_section{
      width: 100%;
      float: left;
-     background-color: #1c1c1c;
+     background-color: #50a3dabb;
      height: auto;
      padding-bottom: 60px;
 }
@@ -984,7 +1025,7 @@ justify-content: center;
      font-size: 16px;
      text-align: center;
      margin-left: 0px;
-     color: #cdcccd;
+     color: #ffffff;
      padding-top: 30px;
 }
 
@@ -1014,12 +1055,11 @@ justify-content: center;
 #main_slider a.carousel-control-prev {
     position: absolute;
     left: -95px;
-    top: 60%;
-    background-color: #f8ca12;
-}
+    top: 60%;}
 
 #main_slider .carousel-control-prev:hover, #main_slider .carousel-control-next:hover, #main_slider .carousel-control-prev:focus, #main_slider .carousel-control-next:focus {
-    background: #f8ca12;
+
+     background: #50a3dabb;
     color: #fff;
 }
 
@@ -1031,7 +1071,7 @@ justify-content: center;
 #main_slider .carousel-control-prev, #main_slider .carousel-control-next {
     width: 65px;
     height: 65px;
-    background: #f8ca12;
+    background: #50a3dabb;
     opacity: 1;
     font-size: 30px;
     color: #000;
