@@ -601,6 +601,25 @@ p.lorem_text {
     z-index: 0;
 }
 
+.services_text{
+    width: 100%;
+    float: left;
+    font-size: 46px;
+    color: #fefeff;
+    font-weight: bold;
+    text-align: center;
+}
+.services_text::after {
+    content: '';
+    border: 10px solid #50a3dabb;
+    border-radius: 12px;
+    position: absolute;
+    width: 120px;
+    text-align: center;
+    right: 44%;
+    top: 55px;
+}
+
 /* INICIO EFECTO FOTO */
 
 .service_section::before {
@@ -718,24 +737,7 @@ p.lorem_text {
 /*/////////////////////////////////////*/
 
 
-.services_text{
-    width: 100%;
-    float: left;
-    font-size: 46px;
-    color: #fefeff;
-    font-weight: bold;
-    text-align: center;
-}
-.services_text::after {
-    content: '';
-    border: 10px solid #50a3dabb;
-    border-radius: 12px;
-    position: absolute;
-    width: 120px;
-    text-align: center;
-    right: 44%;
-    top: 55px;
-}
+
 
 .dolor_text{
      width: 100%;
