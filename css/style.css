@@ -374,7 +374,7 @@ button {
     font-size: 35px;
     color: #ffffff;
     font-weight: bold;
-    padding-top: 100px;    
+    padding-top: 100px;
     position:relative;
     z-index: 2;
 }
@@ -417,7 +417,7 @@ p.lorem_text {
 .appointment_bt a:hover{
     color: #000000;
     background-color: #f0f1f1;
-    
+
 }
 
 .slide-wrapper{display:inline;}
@@ -461,16 +461,16 @@ p.lorem_text {
 /*------------------------------ vertical bootstrap slider----------------------------*/
 
 .banner_section .carousel-inner> .carousel-item.carousel-item-next ,
-.banner_section .carousel-inner > .carousel-item.active.carousel-item-right{ 
-    transform: translate3d(0, 100%, 0); -webkit-transform: translate3d(0, 100%, 0); -ms-transform: translate3d(0, 100%, 0); 
+.banner_section .carousel-inner > .carousel-item.active.carousel-item-right{
+    transform: translate3d(0, 100%, 0); -webkit-transform: translate3d(0, 100%, 0); -ms-transform: translate3d(0, 100%, 0);
     -moz-transform: translate3d(0, 100%, 0); -o-transform: translate3d(0, 100%, 0);  top: 0;
-    
+
 }
 .banner_section .carousel-inner > .carousel-item.carousel-item-prev ,
-.banner_section .carousel-inner > .carousel-item.active.carousel-item-left{ 
+.banner_section .carousel-inner > .carousel-item.active.carousel-item-left{
     transform: translate3d(0,-100%, 0); -webkit-transform: translate3d(0,-100%, 0);  -moz-transform: translate3d(0,-100%, 0);
     -ms-transform: translate3d(0,-100%, 0); -o-transform: translate3d(0,-100%, 0); top: 0;
-    
+
 }
 .banner_section .carousel-inner > .carousel-item.next.carousel-item-left ,
 .banner_section .carousel-inner > .carousel-item.carousel-item-prev.carousel-item-right ,
@@ -496,12 +496,12 @@ p.lorem_text {
     transform: rotate(90deg);
 }
 .carousel-indicators li{
-    display:block; margin-bottom:5px; border:1px solid #00a199; 
-    
+    display:block; margin-bottom:5px; border:1px solid #00a199;
+
 }
 .carousel-indicators li.active{
     margin-bottom:5px; background:#00a199;
-    
+
 }
 .carousel-indicators li.active {
     margin-bottom: 5px;
@@ -509,12 +509,12 @@ p.lorem_text {
 }
 .carousel-indicators li {
     background-color: #fcfcfc;
-    border: 0px; 
+    border: 0px;
     width: 25px;
     height: 25px;
     border-radius: 25px;
 }
-.carousel-indicators { 
+.carousel-indicators {
      left: -105%;
 }
 
@@ -525,7 +525,7 @@ p.lorem_text {
      background-image: url(../images/img/fondo-nosotros.webp);
      height: auto;
      background-size: 30%;
-     padding-bottom: 90px;     
+     padding-bottom: 90px;
 }
 
 .image_2{
@@ -602,14 +602,35 @@ p.lorem_text {
 }
 
 .services_text{
-    width: 100%;
-    float: left;
-    font-size: 46px;
-    color: #fefeff;
-    font-weight: bold;
-    text-align: center;
+     width: 100%;
+     float: left;
+     color: #fefeff;
+     text-align: center;
+     font-weight: bold;
+     font-size: 46px;
+     margin-bottom: 90px;
 }
+
 .services_text::after {
+  content: "";
+  display: block;
+  border: 10px solid #50a3dabb;
+     border-radius: 12px;
+    width: 120px;
+    text-align: center;
+    right: 44%;
+    top: 55px;
+
+
+  /* width: 60px;
+  height: 40px; */
+  /* background: rgba(0, 128, 255, 0.5); */
+  margin: 6px auto 0; /* separación arriba */
+
+}
+
+
+/* .services_text::after {
     content: '';
     border: 10px solid #50a3dabb;
     border-radius: 12px;
@@ -618,7 +639,8 @@ p.lorem_text {
     text-align: center;
     right: 44%;
     top: 55px;
-}
+} */
+
 
 /* INICIO EFECTO FOTO */
 
@@ -705,7 +727,7 @@ p.lorem_text {
   cursor: pointer;
   border-radius: 5px;
   font-weight: bold;
-} 
+}
 
 
 /* .contenido-extra {
@@ -1166,5 +1188,5 @@ justify-content: center;
 }
 
 .margin_top_0{
-     margin-top: 90px; 
+     margin-top: 90px;
 }
