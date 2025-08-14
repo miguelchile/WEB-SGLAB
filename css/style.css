@@ -518,7 +518,7 @@ p.lorem_text {
      left: -105%;
 }
 
-.about_section{
+.about_sectionx{
      width: 100%;
      float: left;
      /* background-image: url(../images/about-bg.png); */
@@ -527,6 +527,48 @@ p.lorem_text {
      background-size: 30%;
      padding-bottom: 90px;
 }
+
+.about_section {
+    /* background-color: #99cee2ea; */
+    position: relative;
+    width: 100%;
+    float: left;
+    background-image: url(../images/img/FOTOS-LAB/grupo.webp);
+    height:100%;
+    padding-top: 50px;
+    /* padding-bottom: 162px; */
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+/* EFECTO FOTO */
+
+.about_section::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: #50a3da69;  /* azul oscuro semitransparente */
+     z-index: 1;
+}
+
+.about_section .container {
+     position: relative;
+     z-index: 3;
+     color: #fff;
+}
+.about_section .container,
+.about_section .row,
+.about_section .col-md-6 {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+}
+/* FIN EFECTO FOTO */
+
 
 .image_2{
      width: 100%;
@@ -561,26 +603,35 @@ p.lorem_text {
 
 .ipsum_text_1{
     width: 100%;
-    float: left;
+    text-align:justify;
+    /* float: left; */
     font-size: 16px;
-    color:rgba(87, 87, 83, 0.925);
-    margin-left: 0px;
+    color:rgba(0, 0, 0, 0.925);
+    /* margin-left: 0px; */
+}
+
+.ipsum_text1{
+    width: 70%;
+    /* float:inline-end; */
+    font-size: 16px;
+    color:rgba(0, 0, 0, 0.925);
+    /* margin-left: 0px; */
 }
 
 .read_more_bt {
     width: 100%;
-    float: left;
+    float:left;
     margin-top: 40px;
 }
 .read_more_bt a{
     width: 30%;
-    float: left;
+    /* float: left; */
     font-size: 16px;
     color: #ffffff;
     background-color: #50a3dabb;
     text-align: center;
     text-transform: uppercase;
-    padding: 14px 0px;
+    padding: 15px 10px;
 }
 .read_more_bt a:hover{
     color: #000000;
