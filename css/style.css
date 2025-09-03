@@ -298,8 +298,13 @@ button {
     width: 100%;
 }
 
+.nav-link.active {
+  color: #50a3dabb !important;
+  /* background-color: #007bff; */
+  border-radius: 5px;
+}
 
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
     /* color: #006eff; */
     color: #50a3dabb;
 }
@@ -533,7 +538,7 @@ p.lorem_text {
     position: relative;
     width: 100%;
     float: left;
-    background-image: url(../images/img/FOTOS-LAB/grupo2.webp);
+    /* background-image: url(../images/img/FOTOS-LAB/grupo2.webp); */
     height:auto;
     padding-top: 50px;
     /* padding-bottom: 162px; */
@@ -543,7 +548,7 @@ p.lorem_text {
 }
 
 /* EFECTO FOTO */
-
+/*
 .about_section::before {
      content: "";
      position: absolute;
@@ -551,8 +556,8 @@ p.lorem_text {
      left: 0;
      width: 100%;
      height: 100%;
-     /* background-color: #50a3daa6;  azul oscuro semitransparente */
-     background-color: #ffffffab;  /* azul oscuro semitransparente */
+     * background-color: #50a3daa6;  azul oscuro semitransparente *
+     background-color: #ffffffab;  /* azul oscuro semitransparente *
 
      z-index: 1;
 }
@@ -569,6 +574,7 @@ p.lorem_text {
     z-index: 2;
     color: #fff;
 } 
+*/
 /* FIN EFECTO FOTO */
 
 
@@ -607,22 +613,12 @@ p.lorem_text {
 }
 
 .ipsum_text_1{
-    width: 100%;
+    width: auto;
     text-align:justify;
     /* float: left; */
     font-size: 16px;
     color:rgba(0, 0, 0, 0.925);
     /* color: rgba(255, 255, 255, 0.925); */
-
-    /* margin-left: 0px; */
-}
-
-.ipsum_text1{
-    width: 70%;
-    /* float:inline-end; */
-    font-size: 16px;
-    color:rgba(0, 0, 0, 0.925);
-    /* margin-left: 0px; */
 }
 
 .read_more_bt {
